@@ -46,6 +46,7 @@ public class LightRadiusController : MonoBehaviour
         if (spotLight.pointLightOuterRadius <= 0)
         {
             print("You lose and you suck");
+            Time.timeScale = 0;
         }
     }
 
