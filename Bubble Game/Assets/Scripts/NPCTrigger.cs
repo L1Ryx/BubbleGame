@@ -15,5 +15,14 @@ public class NPCTrigger : MonoBehaviour
             NPCTriggered.Invoke();
         }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print("skibidi rizzler");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("skibidi rizzler");
+        NPCTriggered.Invoke();
     }
 }
