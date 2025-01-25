@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class LightController : MonoBehaviour
+public class LightRadiusController : MonoBehaviour
 {
     [SerializeField]
     private float startingRadius = 5.0f;
