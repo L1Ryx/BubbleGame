@@ -572,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingRadius: 5
   radiusIncrease: 1
-  radiusDecay: 0.005
+  radiusDecay: 1
 --- !u!58 &2046535475
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -41,8 +41,8 @@ public class LightRadiusController : MonoBehaviour
 
     private void Update()
     {
-        spotLight.pointLightOuterRadius -= radiusDecay;
-        lightCollider.radius -= radiusDecay;
+        spotLight.pointLightOuterRadius -= (radiusDecay*Time.deltaTime);
+        lightCollider.radius -= (radiusDecay * Time.deltaTime);
         if (spotLight.pointLightOuterRadius <= 0)
         {
             print("You lose and you suck");
