@@ -1,0 +1,37 @@
+Event	ID	Name			Wwise Object Path	Notes
+	63594889	Switch_LifeStage_Kid			\Default Work Unit\Switch_LifeStage_Kid	
+	1167582794	Play_LifeStagesMusic			\Default Work Unit\Play_LifeStagesMusic	
+	1948037353	Switch_LifeStage_Adult			\Default Work Unit\Switch_LifeStage_Adult	
+	2004425537	Play_TalkA			\Default Work Unit\Play_TalkA	
+	2004425538	Play_TalkB			\Default Work Unit\Play_TalkB	
+	2004425539	Play_TalkC			\Default Work Unit\Play_TalkC	
+	2004425540	Play_TalkD			\Default Work Unit\Play_TalkD	
+	2838936948	Play_Rain			\Default Work Unit\Play_Rain	
+	2865853308	Stop_LifeStagesMusic			\Default Work Unit\Stop_LifeStagesMusic	
+	3103269281	Switch_LifeStage_YA			\Default Work Unit\Switch_LifeStage_YA	
+	3206237490	Stop_Rain			\Default Work Unit\Stop_Rain	
+	3686781217	Switch_LifeStage_Elder			\Default Work Unit\Switch_LifeStage_Elder	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	984270542	LifeStages			\Default Work Unit\LifeStages	
+
+Switch	ID	Name	Switch Group			Notes
+	975530795	Elder	LifeStages			
+	1115957451	Kid	LifeStages			
+	1484195827	YA	LifeStages			
+	2752733175	Adult	LifeStages			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4100859180	Brightness			\Default Work Unit\Brightness	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	67836164	82883-Morse_code_erase-BLASTWAVEFX-18197	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\2E\{2EF2FA1A-AC5A-2CAC-D0C8-AB1F70FED251}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KidTalk_Random\82883-Morse_code_erase-BLASTWAVEFX-18197		95596
+	567835755	Burst_Cue_Rubato_Elder	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\02\{02CA6778-7A63-DB69-0A08-A8F273BE6161}.wem		\Interactive Music Hierarchy\Default Work Unit\LifeStagesMusic\Playlist-Elder\Burst_Cue_Rubato_Elder\Burst_Cue_Rubato_Elder		13339108
+	613301962	82446-Morse_code_end_message_ar-BLASTWAVEFX-18195	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\90\{90305F95-4B27-EA1F-1395-979A154110E2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\YaTalk_Random\82446-Morse_code_end_message_ar-BLASTWAVEFX-18195		130668
+	637635308	Burst_Cue_66_Adult	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\6F\{6FB1CFA6-24E3-78B8-080A-55B53F956A93}.wem		\Interactive Music Hierarchy\Default Work Unit\LifeStagesMusic\Playlist-Adult\Burst_Cue_66_Adult\Burst_Cue_66_Adult		8378344
+	683612871	Burst_Cue_76_Kid	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\A9\{A9891DB2-2FA5-2D73-0B1D-5D242E3A94C9}.wem		\Interactive Music Hierarchy\Default Work Unit\LifeStagesMusic\Playlist-Kid\Burst_Cue_76_Kid\Burst_Cue_76_Kid		10307528
+	687845805	226777-TROPICAL_Rainforest_rain_storm_with_heavy_water_drops	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\C3\{C347DB9A-95FB-6CDB-09A7-40FC2878ABD2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Rain_Blend\226777-TROPICAL_Rainforest_rain_storm_with_heavy_water_drops		28422632
+	800334443	Burst_Cue_80_YA	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\04\{0464F4EA-A334-A472-621F-B63B7687279F}.wem		\Interactive Music Hierarchy\Default Work Unit\LifeStagesMusic\Playlist-YA\Burst_Cue_80_YA\Burst_Cue_80_YA		7488160
+	819032199	85723-Morse_code_letter_y-BLASTWAVEFX-18217	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\5B\{5B6E25FF-8142-9D69-51E7-B6E8D620DE58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ElderTalk_Random\85723-Morse_code_letter_y-BLASTWAVEFX-18217		109048
+	1019289326	84717-Morse_code_letter_x-BLASTWAVEFX-18216	Y:\Desktop\Desktop - MacBook Pro (2)\GameMaking\BubbleGame\Bubble Game\BubbleGameV3\.cache\C7\{C7FB0658-A61C-BB9A-BFE6-B9BA1EEC459B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AdultTalk_Random\84717-Morse_code_letter_x-BLASTWAVEFX-18216		93220
+

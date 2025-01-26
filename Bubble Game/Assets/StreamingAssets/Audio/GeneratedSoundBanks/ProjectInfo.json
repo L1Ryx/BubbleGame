@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "BubbleGameV3",
+   "GUID": "{8C7B4B08-4CDB-4C40-AF17-DDF61C1AD0FA}",
+   "Generator": "2024.1.1.8691"
+  },
+  "CacheRoot": "../../../../BubbleGameV3/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{E042C2EE-5FAD-490B-B2CD-8D81A075CA13}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../BubbleGameV3/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{E52BD24F-8ADC-422F-825C-D664D4711AB6}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../BubbleGameV3/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{13A11B6A-B46B-42F9-8A59-FE856F3F5D80}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{79C0881D-8812-1210-EF91-5ED9612B05CA}"
+ }
+}

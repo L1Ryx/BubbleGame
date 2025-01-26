@@ -10,12 +10,12 @@
   <LoadSoundEngineInEditMode>true</LoadSoundEngineInEditMode>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise2023.1.5.8522/Wwise.app</WwiseInstallationPathMac>
+  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise2024.1.1.8691/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../../../../../Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Desktop - MacBook Pro (2)/GameMaking/BubbleGame/Bubble Game/BubbleGameV2/BubbleGameV2.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../BubbleGameV3/BubbleGameV3.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
-  <XMLTranslatorTimeout>10</XMLTranslatorTimeout>
+  <XMLTranslatorTimeout>0</XMLTranslatorTimeout>
   <WaapiTranslatorTimeout>0</WaapiTranslatorTimeout>
 </WwiseSettings>

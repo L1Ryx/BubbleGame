@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_LifeStagesMusic" ID="{B6D266BA-EF30-4081-8F39-EA0EF7F45C4C}">
+					<ChildrenList>
+						<Action Name="" ID="{709015AF-55C7-4E66-B885-A6FDC0CB253F}" ShortID="54239231">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LifeStagesMusic" ID="{A96560C3-BF12-4E28-9694-DB67B08743D9}" WorkUnitID="{05ECC55A-2144-4914-9929-A9BF66EAB9AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_LifeStagesMusic" ID="{59F2B4D5-9A32-4356-A37A-0184F8356427}">
+					<ChildrenList>
+						<Action Name="" ID="{A9369943-571D-4962-952B-A1AFEAFD1B1B}" ShortID="119951443">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LifeStagesMusic" ID="{A96560C3-BF12-4E28-9694-DB67B08743D9}" WorkUnitID="{05ECC55A-2144-4914-9929-A9BF66EAB9AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Switch_LifeStage_Kid" ID="{62D1B6FA-9140-4C50-A93E-394D2137C2AA}">
+					<ChildrenList>
+						<Action Name="" ID="{57EF2F2F-9CEA-49FE-A8E0-8D7126CD7661}" ShortID="927048718">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kid" ID="{371B7844-0F4E-477E-A0D3-60AA5B715F8B}" WorkUnitID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Switch_LifeStage_YA" ID="{F9A87A63-2A10-4880-B6BE-D49048432845}">
+					<ChildrenList>
+						<Action Name="" ID="{3A7BBA64-7DA8-4706-864F-EBDB2F75108A}" ShortID="886302953">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="YA" ID="{17613146-6078-453B-BD8A-8E3AC3F4ADA4}" WorkUnitID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Switch_LifeStage_Adult" ID="{9738808A-6A18-4093-B95E-088DF155E8C7}">
+					<ChildrenList>
+						<Action Name="" ID="{61355D6A-1A90-4725-AFFC-6824DD563162}" ShortID="441395218">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Adult" ID="{CB52CE01-F86F-4829-8D4B-440DC262C4B6}" WorkUnitID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Switch_LifeStage_Elder" ID="{71001D8B-820A-49E8-8A1D-1EC921668EAB}">
+					<ChildrenList>
+						<Action Name="" ID="{3AF36936-D999-459B-BE56-4D6F4664B62A}" ShortID="372630516">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Elder" ID="{DCC6BFF6-63F1-4299-89C0-C276BE8271B8}" WorkUnitID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TalkA" ID="{5F6B9FF8-F15D-4650-9E06-70A3383CD7B0}">
+					<ChildrenList>
+						<Action Name="" ID="{571E308B-AA30-4F90-9F9B-A468F3D0A9FE}" ShortID="963486623">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KidTalk_Random" ID="{AE76895A-2B59-4A73-96C9-8205EECB341C}" WorkUnitID="{9700AB4B-198A-4E4F-8093-CA795C299233}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TalkB" ID="{D5630D38-CBA1-491B-9A27-DAA5B8698572}">
+					<ChildrenList>
+						<Action Name="" ID="{7B2F7888-BE77-4CC9-9511-1F8F34C69505}" ShortID="770060800">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="YaTalk_Random" ID="{7ACDFF3B-2ED6-454A-85DF-62E4E2E15D8A}" WorkUnitID="{9700AB4B-198A-4E4F-8093-CA795C299233}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TalkC" ID="{20C5CFF3-0539-41A6-BF14-D616EBE4E08F}">
+					<ChildrenList>
+						<Action Name="" ID="{2CFD606F-9D48-4462-BE2D-FB9C4AB67302}" ShortID="804270061">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AdultTalk_Random" ID="{7AD3082C-A8A7-45E5-AF35-263C541B9068}" WorkUnitID="{9700AB4B-198A-4E4F-8093-CA795C299233}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TalkD" ID="{4ACAC02A-DC4A-4D0A-A583-08A829CF9F2E}">
+					<ChildrenList>
+						<Action Name="" ID="{CD4AF666-E5D1-4891-83FD-E762888AE742}" ShortID="696118971">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ElderTalk_Random" ID="{6E9A34F0-70A9-4ADD-89F7-10684C5425B3}" WorkUnitID="{9700AB4B-198A-4E4F-8093-CA795C299233}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rain" ID="{8A806014-D938-4E08-8E4C-D8DEA1DE452A}">
+					<ChildrenList>
+						<Action Name="" ID="{2319CC01-1296-411E-8EFF-A9262B1539B1}" ShortID="715344718">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain_Blend" ID="{148B6308-529A-4580-97FB-3FFC3BBA47E5}" WorkUnitID="{9700AB4B-198A-4E4F-8093-CA795C299233}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Rain" ID="{2EE8D828-6B44-4F06-8952-71EAA3EB0389}">
+					<ChildrenList>
+						<Action Name="" ID="{CB45D2AA-BBB2-400F-A00D-A6BB5A6A857D}" ShortID="849972969">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain_Blend" ID="{148B6308-529A-4580-97FB-3FFC3BBA47E5}" WorkUnitID="{9700AB4B-198A-4E4F-8093-CA795C299233}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
