@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9700AB4B-198A-4E4F-8093-CA795C299233}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{9700AB4B-198A-4E4F-8093-CA795C299233}" PersistMode="Standalone">
+			<ChildrenList>
+				<BlendContainer Name="TestBlend" ID="{6A69D253-C8C3-4C1C-B9DC-D76CC7853C14}" ShortID="666176628">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MFN304-SG-NES Trackv2" ID="{0B8563E6-0BF1-483B-B7D6-7345024EFC44}" ShortID="460363254">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MFN304-SG-NES Trackv2" ID="{F900FED5-C11A-48EE-A3A7-705FC0D0E655}">
+									<Language>SFX</Language>
+									<AudioFile>MFN304-SG-NES Trackv2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="167169266"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MFN304-SG-NES Trackv2" ID="{F900FED5-C11A-48EE-A3A7-705FC0D0E655}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<RandomSequenceContainer Name="KidTalk_Random" ID="{AE76895A-2B59-4A73-96C9-8205EECB341C}" ShortID="280084994">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>31</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A936647E-EF2B-4402-8B60-19570CF8EDE2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{74C843E4-6B0D-404E-8540-AAC6698C5782}" ShortID="316205380">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{D5B44F5D-8548-4B37-A7D4-716034E11581}">
+									<Language>SFX</Language>
+									<AudioFile>82446-Morse_code_end_message_ar-BLASTWAVEFX-18195.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="613301962"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{D5B44F5D-8548-4B37-A7D4-716034E11581}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{453AD10E-E198-4425-B5BD-F63804C3B896}" ShortID="187159167">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{06E64CDC-F180-4D09-883C-4EB769DBA876}">
+									<Language>SFX</Language>
+									<AudioFile>84717-Morse_code_letter_x-BLASTWAVEFX-18216.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1019289326"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{06E64CDC-F180-4D09-883C-4EB769DBA876}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{490AAAB5-1BAA-4301-AA94-9558046490FA}" ShortID="792766739">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{F8936C5A-1E35-43A8-9FF4-50524D300DD4}">
+									<Language>SFX</Language>
+									<AudioFile>82883-Morse_code_erase-BLASTWAVEFX-18197.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="67836164"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{F8936C5A-1E35-43A8-9FF4-50524D300DD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{886F23CD-6735-4F98-B4F6-3B6F3AC46EC4}" ShortID="936270958">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{157FB02F-11FF-486E-A8BC-B1FE5E2F2A6B}">
+									<Language>SFX</Language>
+									<AudioFile>85723-Morse_code_letter_y-BLASTWAVEFX-18217.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="819032199"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{157FB02F-11FF-486E-A8BC-B1FE5E2F2A6B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="YaTalk_Random" ID="{7ACDFF3B-2ED6-454A-85DF-62E4E2E15D8A}" ShortID="979069268">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-50</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5976C74C-1021-4268-8C21-A35DF137465A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{2456B5D1-90C8-40DF-B081-F100987CF8B8}" ShortID="1011912368">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{94DB7184-2290-43A1-9C84-4EE2AD158C80}">
+									<Language>SFX</Language>
+									<AudioFile>82446-Morse_code_end_message_ar-BLASTWAVEFX-18195.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="613301962"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{94DB7184-2290-43A1-9C84-4EE2AD158C80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{82E4FA44-4565-45B3-89F7-E14C5411C3D5}" ShortID="919843779">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{47CA8E56-5923-4F6A-AABA-0125A194282B}">
+									<Language>SFX</Language>
+									<AudioFile>84717-Morse_code_letter_x-BLASTWAVEFX-18216.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1019289326"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{47CA8E56-5923-4F6A-AABA-0125A194282B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{35D4247F-8C4E-4AA4-B5AD-DB7B2B926893}" ShortID="22898369">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{4B2834F5-8255-460F-AA1C-233A53C77249}">
+									<Language>SFX</Language>
+									<AudioFile>82883-Morse_code_erase-BLASTWAVEFX-18197.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="67836164"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{4B2834F5-8255-460F-AA1C-233A53C77249}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{8C39CEFA-2A6A-4341-8032-B3438F12FBF6}" ShortID="68316589">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{0A14E45A-0E84-4511-A94F-344D52DD5774}">
+									<Language>SFX</Language>
+									<AudioFile>85723-Morse_code_letter_y-BLASTWAVEFX-18217.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="819032199"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{0A14E45A-0E84-4511-A94F-344D52DD5774}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="AdultTalk_Random" ID="{7AD3082C-A8A7-45E5-AF35-263C541B9068}" ShortID="138853685">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-250</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{ACD73DD6-1FFF-412F-B550-2D9D21D4A413}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{C98557B5-216B-4734-AC30-B78AD7CC6B49}" ShortID="807150302">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{677AC4F2-33EE-4D72-A5AF-F06045AE2B23}">
+									<Language>SFX</Language>
+									<AudioFile>82446-Morse_code_end_message_ar-BLASTWAVEFX-18195.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="613301962"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{677AC4F2-33EE-4D72-A5AF-F06045AE2B23}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{1F52782B-9CB2-4364-90CC-AAA44142A7D3}" ShortID="950325532">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{00760E12-7D2D-4204-AFC9-B7A0822841E7}">
+									<Language>SFX</Language>
+									<AudioFile>84717-Morse_code_letter_x-BLASTWAVEFX-18216.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1019289326"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{00760E12-7D2D-4204-AFC9-B7A0822841E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{C56D9B53-4EFF-4032-A87B-F68A849A12B8}" ShortID="1017508266">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{B96257C1-F8F4-4C75-A831-D79B2C9A7DC4}">
+									<Language>SFX</Language>
+									<AudioFile>82883-Morse_code_erase-BLASTWAVEFX-18197.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="67836164"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{B96257C1-F8F4-4C75-A831-D79B2C9A7DC4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{E97F8F6E-70BA-4B29-85BB-8611E446C07A}" ShortID="531465178">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{B46DAE8F-BAE2-4BF2-BD79-A8C84081AD18}">
+									<Language>SFX</Language>
+									<AudioFile>85723-Morse_code_letter_y-BLASTWAVEFX-18217.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="819032199"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{B46DAE8F-BAE2-4BF2-BD79-A8C84081AD18}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="ElderTalk_Random" ID="{6E9A34F0-70A9-4ADD-89F7-10684C5425B3}" ShortID="521615867">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-500</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FF8F15DA-31CC-4881-AF43-EDCD3DA99DE2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{F1B9DA40-E5C4-4651-BC13-32F776B6B238}" ShortID="633756815">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{D583263F-49C7-446D-BE96-502F00395A30}">
+									<Language>SFX</Language>
+									<AudioFile>82446-Morse_code_end_message_ar-BLASTWAVEFX-18195.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="613301962"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82446-Morse_code_end_message_ar-BLASTWAVEFX-18195" ID="{D583263F-49C7-446D-BE96-502F00395A30}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{FF1EA859-8C41-4CD3-8841-3BA1D80262D9}" ShortID="723921371">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{2BDB9508-81E4-453F-859D-19C1DBD9BB46}">
+									<Language>SFX</Language>
+									<AudioFile>84717-Morse_code_letter_x-BLASTWAVEFX-18216.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1019289326"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="84717-Morse_code_letter_x-BLASTWAVEFX-18216" ID="{2BDB9508-81E4-453F-859D-19C1DBD9BB46}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{AB5B251F-2840-4D20-8D80-1BFE18065766}" ShortID="689374491">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{0C5CC254-FE55-4FFA-9552-D7EEB89028F7}">
+									<Language>SFX</Language>
+									<AudioFile>82883-Morse_code_erase-BLASTWAVEFX-18197.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="67836164"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="82883-Morse_code_erase-BLASTWAVEFX-18197" ID="{0C5CC254-FE55-4FFA-9552-D7EEB89028F7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{05E8EC51-EC56-441D-8350-CC44710A7024}" ShortID="217408766">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{7E11EACA-5A3B-4094-AD6A-15596FA235F7}">
+									<Language>SFX</Language>
+									<AudioFile>85723-Morse_code_letter_y-BLASTWAVEFX-18217.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="819032199"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="85723-Morse_code_letter_y-BLASTWAVEFX-18217" ID="{7E11EACA-5A3B-4094-AD6A-15596FA235F7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="Rain_Blend" ID="{148B6308-529A-4580-97FB-3FFC3BBA47E5}" ShortID="100130308">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>26</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="226777-TROPICAL_Rainforest_rain_storm_with_heavy_water_drops" ID="{EAB9EDA5-7B3A-40D7-811E-155FEF1E8457}" ShortID="50818227">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{39095274-04A3-4ECA-9A65-F8CCA2C86FEC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{27A5528F-79E9-4ED1-BBD1-1A41C0DF7BF7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="226777-TROPICAL_Rainforest_rain_storm_with_heavy_water_drops" ID="{14D83E57-AED2-42C0-9161-0CA48410D165}">
+									<Language>SFX</Language>
+									<AudioFile>226777-TROPICAL_Rainforest_rain_storm_with_heavy_water_drops.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="687845805"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="226777-TROPICAL_Rainforest_rain_storm_with_heavy_water_drops" ID="{14D83E57-AED2-42C0-9161-0CA48410D165}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

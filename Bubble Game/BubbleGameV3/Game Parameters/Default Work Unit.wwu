@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B2175D69-7C7F-47EF-B36B-C43B5A0B6B3F}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{B2175D69-7C7F-47EF-B36B-C43B5A0B6B3F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Brightness" ID="{9B95AAB8-2097-470D-88D7-FC735C00AFB2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

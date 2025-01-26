@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="LifeStages" ID="{D57483F7-2724-44DC-9FE6-BA4EC2D982A8}">
+					<ChildrenList>
+						<Switch Name="Kid" ID="{371B7844-0F4E-477E-A0D3-60AA5B715F8B}"/>
+						<Switch Name="YA" ID="{17613146-6078-453B-BD8A-8E3AC3F4ADA4}"/>
+						<Switch Name="Elder" ID="{DCC6BFF6-63F1-4299-89C0-C276BE8271B8}"/>
+						<Switch Name="Adult" ID="{CB52CE01-F86F-4829-8D4B-440DC262C4B6}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

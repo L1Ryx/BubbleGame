@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1625A31B-57A7-4127-BC88-43A325EC0F0F}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{1625A31B-57A7-4127-BC88-43A325EC0F0F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="MainBank" ID="{4CF11EC7-56DC-41F7-8B5D-6D01D5105FC5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_LifeStagesMusic" ID="{B6D266BA-EF30-4081-8F39-EA0EF7F45C4C}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_LifeStage_Adult" ID="{9738808A-6A18-4093-B95E-088DF155E8C7}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TalkC" ID="{20C5CFF3-0539-41A6-BF14-D616EBE4E08F}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_LifeStagesMusic" ID="{59F2B4D5-9A32-4356-A37A-0184F8356427}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TalkA" ID="{5F6B9FF8-F15D-4650-9E06-70A3383CD7B0}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_LifeStage_YA" ID="{F9A87A63-2A10-4880-B6BE-D49048432845}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TalkB" ID="{D5630D38-CBA1-491B-9A27-DAA5B8698572}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_LifeStage_Elder" ID="{71001D8B-820A-49E8-8A1D-1EC921668EAB}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Switch_LifeStage_Kid" ID="{62D1B6FA-9140-4C50-A93E-394D2137C2AA}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TalkD" ID="{4ACAC02A-DC4A-4D0A-A583-08A829CF9F2E}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Rain" ID="{8A806014-D938-4E08-8E4C-D8DEA1DE452A}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Rain" ID="{2EE8D828-6B44-4F06-8952-71EAA3EB0389}" WorkUnitID="{77831E6B-266E-41DB-8ACB-2D6CE187F2D6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
