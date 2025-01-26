@@ -27,7 +27,7 @@ public class DoorSpawner : MonoBehaviour
 
     private GameObject player;
     private Coroutine spawnCoroutine; // Reference to the spawning coroutine
-    private bool isSpawning = true;   // Flag to control spawning
+    private bool isSpawning = false;   // Flag to control spawning
 
     private void Start()
     {
@@ -79,6 +79,13 @@ public class DoorSpawner : MonoBehaviour
             StopCoroutine(spawnCoroutine);
             spawnCoroutine = null;
         }
+    }
+
+    public void StartSpawner()
+    {
+        // Set the isSpawning flag to false to stop the loop
+        isSpawning = true;
+        spawnCoroutine = StartCoroutine(SpawnDoor());
     }
 
     private Vector3 GetOuterBoundaryPosition()

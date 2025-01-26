@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Background : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class Background : MonoBehaviour
     private float lerpSpeed = 2.0f; // Speed of the color transition
 
     private Coroutine currentCoroutine; // Track the active coroutine
+
+    public UnityEvent startPlay;
+    public UnityEvent interLevel;
 
     private void Awake()
     {
@@ -31,7 +36,17 @@ public class Background : MonoBehaviour
         {
             StopCoroutine(currentCoroutine);
         }
-        currentCoroutine = StartCoroutine(LerpColorWithDelay(Color.black, delay));
+        currentCoroutine = StartCoroutine(LerpColorWithDelay(Color.black, delay, InterLevelText));
+    }
+
+    public void LerpToWhite(float delay = 0f)
+    {
+        // Start the transition to black after the delay
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+        currentCoroutine = StartCoroutine(LerpColorWithDelay(Color.white, delay,StartPlay));
     }
 
     public void LerpToOriginalColor(Color originalColor, float delay = 0f)
@@ -41,10 +56,10 @@ public class Background : MonoBehaviour
         {
             StopCoroutine(currentCoroutine);
         }
-        currentCoroutine = StartCoroutine(LerpColorWithDelay(originalColor, delay));
+        currentCoroutine = StartCoroutine(LerpColorWithDelay(originalColor, delay,StartPlay));
     }
 
-    private IEnumerator LerpColorWithDelay(Color targetColor, float delay)
+    private IEnumerator LerpColorWithDelay(Color targetColor, float delay, Action action)
     {
         // Wait for the delay before starting the transition
         yield return new WaitForSeconds(delay);
@@ -62,5 +77,18 @@ public class Background : MonoBehaviour
         // Ensure the final color is exactly the target color
         spriteRenderer.color = targetColor;
         currentCoroutine = null; // Clear the active coroutine reference
+        action();
+    }
+
+    public void StartPlay()
+    {
+        print("Start play");
+        startPlay.Invoke();
+    }
+
+    public void InterLevelText()
+    {
+        print("show text");
+        interLevel.Invoke();
     }
 }

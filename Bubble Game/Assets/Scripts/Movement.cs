@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private float speed;
-    private bool isInputDisabled = false; // Flag to disable input
+    private bool isInputDisabled = true; // Flag to disable input
 
     void Start()
     {
@@ -108,6 +108,16 @@ public class Movement : MonoBehaviour
         StartCoroutine(FadeOutCoroutine());
     }
 
+    public void EnableMovement()
+    {
+        // enable input
+        gameObject.transform.position = Vector3.zero;
+        spriteRenderer.color = Color.black;
+        //gameObject.SetActive(true);
+        print("test");
+        isInputDisabled = false;
+    }
+
 
     private IEnumerator FadeOutCoroutine()
     {
@@ -126,6 +136,6 @@ public class Movement : MonoBehaviour
         spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0.0f);
 
         // You can add additional logic here (e.g., disable the GameObject)
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

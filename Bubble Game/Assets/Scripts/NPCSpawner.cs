@@ -21,7 +21,7 @@ public class NPCSpawner : MonoBehaviour
 
 
     private Coroutine spawnCoroutine; // Reference to the spawn coroutine
-    private bool isSpawning = true;   // To track if the spawner is active
+    private bool isSpawning = false;   // To track if the spawner is active
 
     private LevelManager levelManager;
 
@@ -55,6 +55,13 @@ public class NPCSpawner : MonoBehaviour
             StopCoroutine(spawnCoroutine);
             spawnCoroutine = null;
         }
+    }
+
+    public void StartSpawner()
+    {
+        // Set the isSpawning flag to false to stop the loop
+        isSpawning = true;
+        spawnCoroutine = StartCoroutine(Spawn());
     }
 
     public void SpawnObject(Vector3 spawnCenter, float range)
