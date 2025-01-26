@@ -1167,13 +1167,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 981952540739212708, guid: e4537e5a1311f0541b396dc05ce8dab2, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2031415720}
+    - target: {fileID: 981952540739212708, guid: e4537e5a1311f0541b396dc05ce8dab2, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 912436052}
-    - target: {fileID: 3275186244298398774, guid: e4537e5a1311f0541b396dc05ce8dab2, type: 3}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2031415720}
     - target: {fileID: 5136947597261064055, guid: e4537e5a1311f0541b396dc05ce8dab2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
