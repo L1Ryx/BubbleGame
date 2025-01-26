@@ -10,24 +10,38 @@ public class NPCSpawner : MonoBehaviour
     [SerializeField]
     private GameObject NPCPrefab;
 
-    GameObject NPC;
+    private Coroutine spawnCoroutine; // Reference to the spawn coroutine
+    private bool isSpawning = true;   // To track if the spawner is active
 
     void Start()
     {
-        StartCoroutine(Spawn());
+        spawnCoroutine = StartCoroutine(Spawn());
     }
 
     IEnumerator Spawn()
     {
-        while (true)
+        while (isSpawning)
         {
-            //update the x & z values depending on the specific boundaries of your scene
-            Vector3 randomizePosition = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5),0);
+            // Update the x & z values depending on the specific boundaries of your scene
+            Vector3 randomizePosition = new Vector3(Random.Range(-7, 7), Random.Range(-4, 4), 0);
 
             Quaternion zeroRotation = Quaternion.Euler(0, 0, 0);
 
-            NPC = Instantiate(NPCPrefab, randomizePosition, zeroRotation);
+            Instantiate(NPCPrefab, randomizePosition, zeroRotation);
             yield return new WaitForSeconds(timeBetweenSpawns);
+        }
+    }
+
+    public void StopSpawner()
+    {
+        // Set the isSpawning flag to false to stop the loop
+        isSpawning = false;
+
+        // Stop the coroutine if it's running
+        if (spawnCoroutine != null)
+        {
+            StopCoroutine(spawnCoroutine);
+            spawnCoroutine = null;
         }
     }
 }

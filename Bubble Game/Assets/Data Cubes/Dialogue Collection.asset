@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c18539763ab4270903ac2648a9b4b2, type: 3}
+  m_Name: Dialogue Collection
+  m_EditorClassIdentifier: 
+  dialogues:
+  - How are you doing?
+  - Today hasn't been the best.
+  - My friend wouldn't talk to me.
+  - Have you ate today?
+  - What's up with this weather?
+  - I can't focus on my work.
+  - You look great today!
+  - I'm feeling lost.
+  - Don't go, please.
+  - I miss my friends.
+  - Let me go.
