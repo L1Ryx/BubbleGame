@@ -633,6 +633,7 @@ GameObject:
   - component: {fileID: 1658175298}
   - component: {fileID: 1658175297}
   - component: {fileID: 1658175296}
+  - component: {fileID: 1658175299}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -658,7 +659,31 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1658175297}
         m_TargetAssemblyTypeName: MusicPlayer, Assembly-CSharp
+        m_MethodName: NextLifeStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1658175297}
+        m_TargetAssemblyTypeName: MusicPlayer, Assembly-CSharp
         m_MethodName: PlayLifeStagesMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1658175297}
+        m_TargetAssemblyTypeName: MusicPlayer, Assembly-CSharp
+        m_MethodName: StopRain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -680,6 +705,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ca447146cd849f29d1be2406af349c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeStagesSwitchGroup: LifeStages
+  lifeStages:
+  - Kid
+  - YA
+  - Adult
+  - Elder
 --- !u!4 &1658175298
 Transform:
   m_ObjectHideFlags: 0
@@ -695,6 +726,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658175299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658175295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b57e58087c894755abadc4a70bd863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 314f2ae2988b43b40855ebac7d8fb732, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1658175297}
+        m_TargetAssemblyTypeName: MusicPlayer, Assembly-CSharp
+        m_MethodName: StopLifeStagesMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1658175297}
+        m_TargetAssemblyTypeName: MusicPlayer, Assembly-CSharp
+        m_MethodName: PlayRain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1936147839
 PrefabInstance:
   m_ObjectHideFlags: 0

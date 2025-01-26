@@ -317,7 +317,7 @@ MonoBehaviour:
   destructionDelay: 3
   letterDisplayInterval: 0.05
   fadeInSpeed: 1
-  dialogueCollection: {fileID: 11400000, guid: 2a49c348173584c2e86c63d4593c2737, type: 2}
+  npcDataCollection: {fileID: 11400000, guid: 46ed497387990f4429b801d651a6a52c, type: 2}
 --- !u!95 &7245087932529918876
 Animator:
   serializedVersion: 7

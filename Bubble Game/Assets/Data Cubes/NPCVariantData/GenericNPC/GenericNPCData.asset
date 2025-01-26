@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e494a933f1d9a4897b85fd0b233849, type: 3}
   m_Name: GenericNPCData
   m_EditorClassIdentifier: 
+  WwiseEventName: Play_TalkC
   list:
   - SpawnRate: 40
     Dialogues: {fileID: 11400000, guid: 2a49c348173584c2e86c63d4593c2737, type: 2}

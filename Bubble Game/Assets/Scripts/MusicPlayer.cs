@@ -3,6 +3,33 @@ using UnityEngine.Events;
 
 public class MusicPlayer : MonoBehaviour
 {   
+    [SerializeField] private string lifeStagesSwitchGroup = "LifeStages"; // Switch Group name
+    [SerializeField] private string[] lifeStages = { "Kid", "YA", "Adult", "Elder" }; // Ordered life stages
+
+    private int currentStageIndex = -1; // Track the current stage
+
+    void Start()
+    {
+        // Set the initial switch state to "Kid"
+        SetLifeStage("Kid");
+    }
+
+    // Public function to change the switch to the next life stage
+    public void NextLifeStage()
+    {
+        // Increment the index and wrap back to 0 if it exceeds the array length
+        currentStageIndex = (currentStageIndex + 1) % lifeStages.Length;
+
+        // Set the next switch state
+        SetLifeStage(lifeStages[currentStageIndex]);
+    }
+
+    // Private function to set the switch state
+    private void SetLifeStage(string stage)
+    {
+        AkSoundEngine.SetSwitch(lifeStagesSwitchGroup, stage, gameObject);
+        Debug.Log($"Life stage switched to: {stage}");
+    }
 
     public void PlayLifeStagesMusic()
     {
@@ -15,6 +42,17 @@ public class MusicPlayer : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Stop_LifeStagesMusic", gameObject);
         Debug.Log("Stopping life stages music.");
+    }
+
+    public void PlayRain()
+    {
+        AkSoundEngine.PostEvent("Play_Rain", gameObject);
+    }
+
+    // Public function to stop the life stages music
+    public void StopRain()
+    {
+        AkSoundEngine.PostEvent("Stop_Rain", gameObject);
     }
 
     // Public function to turn on the "brightness" RTPC (set it to 100)
