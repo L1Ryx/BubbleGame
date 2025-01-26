@@ -10,9 +10,22 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI dialogueText;
 
+    [SerializeField] DialogueCollection InterPlayTexts;
+
+    private void Start() {
+        ShowInterPlayText();
+    }
+
     public void ShowInterPlayText()
     {
-        dialogueText.text = "Level " + level.ToString();
+        if(level >= InterPlayTexts.dialogues.Count)
+        {
+            dialogueText.text = "The end";
+        }
+        else
+        {
+            dialogueText.text = InterPlayTexts.dialogues[level];
+        }
     }
 
     public void IncreaseLevel()
