@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 public class LightRadiusController : MonoBehaviour
@@ -44,8 +45,7 @@ public class LightRadiusController : MonoBehaviour
 
     private void Start()
     {
-        spotLight.pointLightOuterRadius = startingRadius;
-        lightCollider.radius = startingRadius;
+        ResetRadius();
     }
 
     private void Update()
@@ -85,6 +85,12 @@ public class LightRadiusController : MonoBehaviour
     public void StartRadiusDecay()
     {
         isDecreasing = true;
+    }
+
+    public void ResetRadius()
+    {
+        spotLight.pointLightOuterRadius = startingRadius;
+        lightCollider.radius = startingRadius;
     }
 
     private IEnumerator LerpRadiusIncrease()

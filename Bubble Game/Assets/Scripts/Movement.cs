@@ -111,11 +111,13 @@ public class Movement : MonoBehaviour
     public void EnableMovement()
     {
         // enable input
+        isInputDisabled = false;
+    }
+
+    public void ResetPlayer()
+    {
         gameObject.transform.position = Vector3.zero;
         spriteRenderer.color = Color.black;
-        //gameObject.SetActive(true);
-        print("test");
-        isInputDisabled = false;
     }
 
 

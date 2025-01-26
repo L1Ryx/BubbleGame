@@ -5047,6 +5047,7 @@ GameObject:
   - component: {fileID: 173094885}
   - component: {fileID: 173094888}
   - component: {fileID: 173094887}
+  - component: {fileID: 173094889}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -5195,6 +5196,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &173094889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173094884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b57e58087c894755abadc4a70bd863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c8bc016cb53e6f6429e3fed717ad6686, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 173094888}
+        m_TargetAssemblyTypeName: Background, Assembly-CSharp
+        m_MethodName: LerpToWhite
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &254796229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5287,6 +5316,34 @@ MonoBehaviour:
       - m_Target: {fileID: 754803973}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
         m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &754803977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754803968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b57e58087c894755abadc4a70bd863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c8bc016cb53e6f6429e3fed717ad6686, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 754803973}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: ResetPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5778,10 +5835,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 173094888}
-        m_TargetAssemblyTypeName: Background, Assembly-CSharp
-        m_MethodName: LerpToWhite
-        m_Mode: 4
+      - m_Target: {fileID: 11400000, guid: c8bc016cb53e6f6429e3fed717ad6686, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6623,6 +6680,7 @@ GameObject:
   - component: {fileID: 2046535475}
   - component: {fileID: 2046535476}
   - component: {fileID: 2046535477}
+  - component: {fileID: 2046535478}
   m_Layer: 0
   m_Name: SpotLight
   m_TagString: light
@@ -6820,6 +6878,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2046535478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046535471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b57e58087c894755abadc4a70bd863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c8bc016cb53e6f6429e3fed717ad6686, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2046535474}
+        m_TargetAssemblyTypeName: LightRadiusController, Assembly-CSharp
+        m_MethodName: ResetRadius
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2979329977311192364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6936,6 +7022,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2583523037118367573, guid: 79b851d88aca2423b974d5769ee7f059, type: 3}
       insertIndex: -1
       addedObject: {fileID: 754803976}
+    - targetCorrespondingSourceObject: {fileID: 2583523037118367573, guid: 79b851d88aca2423b974d5769ee7f059, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 754803977}
   m_SourcePrefab: {fileID: 100100000, guid: 79b851d88aca2423b974d5769ee7f059, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
