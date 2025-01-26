@@ -6,9 +6,6 @@
 				<Event Name="Play_LifeStagesMusic" ID="{B6D266BA-EF30-4081-8F39-EA0EF7F45C4C}">
 					<ChildrenList>
 						<Action Name="" ID="{709015AF-55C7-4E66-B885-A6FDC0CB253F}" ShortID="54239231">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="LifeStagesMusic" ID="{A96560C3-BF12-4E28-9694-DB67B08743D9}" WorkUnitID="{05ECC55A-2144-4914-9929-A9BF66EAB9AE}"/>
