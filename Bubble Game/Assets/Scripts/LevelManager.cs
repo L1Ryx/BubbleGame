@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class LevelManager : MonoBehaviour
     private TextMeshProUGUI dialogueText;
 
     [SerializeField] DialogueCollection InterPlayTexts;
-
+    [SerializeField] Canvas canvas;
     private void Start() {
         ShowInterPlayText();
     }
@@ -25,6 +26,15 @@ public class LevelManager : MonoBehaviour
         else
         {
             dialogueText.text = InterPlayTexts.dialogues[level];
+        }
+    }
+
+    public void EnableCanvas()
+    {
+        canvas.enabled = true;
+        if(level >= InterPlayTexts.dialogues.Count)
+        {
+            canvas.GetComponentInChildren<Button>().gameObject.SetActive(false);
         }
     }
 
