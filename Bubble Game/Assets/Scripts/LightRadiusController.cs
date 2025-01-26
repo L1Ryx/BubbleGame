@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 public class LightRadiusController : MonoBehaviour
@@ -21,7 +23,9 @@ public class LightRadiusController : MonoBehaviour
     CircleCollider2D lightCollider;
 
     private Coroutine currentLerpCoroutine; // Track the running coroutine
-    private bool isDecreasing = true; // Flag to control radius decay
+    private bool isDecreasing = false; // Flag to control radius decay
+
+    public UnityEvent stopPlay; //ik it doesnt fit here but time
 
     private void OnEnable()
     {
@@ -41,8 +45,7 @@ public class LightRadiusController : MonoBehaviour
 
     private void Start()
     {
-        spotLight.pointLightOuterRadius = startingRadius;
-        lightCollider.radius = startingRadius;
+        ResetRadius();
     }
 
     private void Update()
@@ -56,8 +59,7 @@ public class LightRadiusController : MonoBehaviour
             // Check if light radius has diminished completely
             if (spotLight.pointLightOuterRadius <= 0)
             {
-                Debug.Log("You lose and you suck");
-                Time.timeScale = 0;
+                stopPlay.Invoke();
             }
         }
     }
@@ -78,6 +80,17 @@ public class LightRadiusController : MonoBehaviour
     {
         // Stop the radius decay
         isDecreasing = false;
+    }
+
+    public void StartRadiusDecay()
+    {
+        isDecreasing = true;
+    }
+
+    public void ResetRadius()
+    {
+        spotLight.pointLightOuterRadius = startingRadius;
+        lightCollider.radius = startingRadius;
     }
 
     private IEnumerator LerpRadiusIncrease()

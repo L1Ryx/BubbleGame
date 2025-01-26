@@ -28,6 +28,8 @@ public class NPCTrigger : MonoBehaviour
     private TextMeshProUGUI dialogueText;
     private bool isFadingOut = false; // Flag to prevent retriggering during fade-out
 
+    private LevelManager levelManager;
+
     private void Awake()
     {
         // Get the SpriteRenderer
@@ -56,6 +58,8 @@ public class NPCTrigger : MonoBehaviour
         {
             Debug.LogError("NPCTrigger requires a child TextMeshProUGUI for dialogue.");
         }
+
+        levelManager = FindObjectsByType<LevelManager>(FindObjectsSortMode.None)[0];
 
         // Ensure the dialogue text is initially invisible
         dialogueCanvas.enabled = false;
@@ -102,7 +106,7 @@ public class NPCTrigger : MonoBehaviour
         dialogueCanvas.enabled = true;
 
         // Choose a random dialogue from the collection
-        string dialogue = GetRandomDialogue();
+        string dialogue = GetComponentInParent<NPCData>().GetRandomDialogue(levelManager.GetLevel());
 
         // Display the dialogue letter by letter
         dialogueText.text = string.Empty;
@@ -111,18 +115,6 @@ public class NPCTrigger : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(letterDisplayInterval);
         }
-    }
-
-    private string GetRandomDialogue()
-    {
-        if (dialogueCollection == null || dialogueCollection.dialogues.Count == 0)
-        {
-            Debug.LogWarning("DialogueCollection is empty or not assigned!");
-            return "No dialogue available.";
-        }
-
-        int randomIndex = UnityEngine.Random.Range(0, dialogueCollection.dialogues.Count);
-        return dialogueCollection.dialogues[randomIndex];
     }
 
     public void FadeOutAndDestroy() {

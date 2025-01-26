@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e494a933f1d9a4897b85fd0b233849, type: 3}
+  m_Name: ChildNPCDataCollection
+  m_EditorClassIdentifier: 
+  list:
+  - SpawnRate: 0
+    Dialogues: {fileID: 11400000, guid: 99710917128da9a479902a8e21b1c26e, type: 2}
+  - SpawnRate: 0
+    Dialogues: {fileID: 11400000, guid: 6e2465328c9e2e84c9f15b8b58ee68ff, type: 2}
+  - SpawnRate: 20
+    Dialogues: {fileID: 11400000, guid: d78198fd9be00f8469d070296226f016, type: 2}

@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isFading = false; // Flag to prevent multiple fade operations
     [Header("Events")]
-    public UnityEvent doorOpened;
+    public UnityEvent stopPlay;
 
     private void Awake()
     {
@@ -91,7 +91,7 @@ public class Door : MonoBehaviour
         if (collision.gameObject.tag == "Player" && !isFading)
         {
             // If the player touches the door, fade out immediately
-            doorOpened.Invoke();
+            stopPlay.Invoke();
             StartCoroutine(FadeOut(fadeOutSpeed));
         }
     }
