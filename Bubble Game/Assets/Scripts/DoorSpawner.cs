@@ -37,8 +37,6 @@ public class DoorSpawner : MonoBehaviour
             Debug.LogError("Player object not found! Make sure the player is tagged as 'Player'.");
             return;
         }
-
-        spawnCoroutine = StartCoroutine(SpawnDoor());
     }
 
     private IEnumerator SpawnDoor()

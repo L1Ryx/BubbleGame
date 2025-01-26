@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: GenericNPCData
   m_EditorClassIdentifier: 
   list:
-  - SpawnRate: 50
-    Dialogues: {fileID: 11400000, guid: 2a49c348173584c2e86c63d4593c2737, type: 2}
   - SpawnRate: 40
     Dialogues: {fileID: 11400000, guid: 2a49c348173584c2e86c63d4593c2737, type: 2}
   - SpawnRate: 30
-    Dialogues: {fileID: 11400000, guid: 2a49c348173584c2e86c63d4593c2737, type: 2}
+    Dialogues: {fileID: 11400000, guid: 84fc5ab8fcfd02a4faf54fdb30923995, type: 2}
+  - SpawnRate: 20
+    Dialogues: {fileID: 11400000, guid: 45c5308a9f3af50408af6278dcbb4226, type: 2}
+  - SpawnRate: 10
+    Dialogues: {fileID: 11400000, guid: f4d38d73c26a13e4099709ca5ebe427f, type: 2}

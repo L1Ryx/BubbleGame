@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: ParentNPCDataCollection
   m_EditorClassIdentifier: 
   list:
-  - SpawnRate: 20
+  - SpawnRate: 40
     Dialogues: {fileID: 11400000, guid: 385f4126c3b8976479f9833d6eb38831, type: 2}
-  - SpawnRate: 10
+  - SpawnRate: 20
     Dialogues: {fileID: 11400000, guid: 94eaac65b875ca644ac3674c6d35feb1, type: 2}
-  - SpawnRate: 5
+  - SpawnRate: 10
     Dialogues: {fileID: 11400000, guid: e32ae20adb54f6147bd33986664c57fd, type: 2}
+  - SpawnRate: 0
+    Dialogues: {fileID: 11400000, guid: 73a5626583b7934419ddbdcca3208538, type: 2}

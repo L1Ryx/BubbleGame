@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: LoveDialogue2
   m_EditorClassIdentifier: 
   dialogues:
-  - When will we get married?
+  - Where do you think we'll get married?
+  - I love you.
+  - We're having dinner at my parent's this weekend.
+  - Let's go out tonight!
+  - Can you believe we've been together three years?

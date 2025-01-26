@@ -20,4 +20,4 @@ MonoBehaviour:
   - SpawnRate: 40
     Dialogues: {fileID: 11400000, guid: d78198fd9be00f8469d070296226f016, type: 2}
   - SpawnRate: 20
-    Dialogues: {fileID: 11400000, guid: d78198fd9be00f8469d070296226f016, type: 2}
+    Dialogues: {fileID: 11400000, guid: 853d45ec529d9634db9817c36cd77326, type: 2}

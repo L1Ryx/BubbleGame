@@ -13,14 +13,8 @@ MonoBehaviour:
   m_Name: GenericDialogueCollection
   m_EditorClassIdentifier: 
   dialogues:
-  - How are you doing?
-  - Today hasn't been the best.
+  - Wanna play outside?
+  - Awesome scooter!
+  - What teacher do you have this year?
+  - Can you sleep over?
   - My friend wouldn't talk to me.
-  - Have you ate today?
-  - What's up with this weather?
-  - I can't focus on my work.
-  - You look great today!
-  - I'm feeling lost.
-  - Don't go, please.
-  - I miss my friends.
-  - Let me go.
