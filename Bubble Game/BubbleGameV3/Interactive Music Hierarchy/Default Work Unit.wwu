@@ -35,11 +35,7 @@
 													</MusicFade>
 												</SourceFadeOut>
 												<DestinationFadeIn>
-													<MusicFade Name="Destination Fade-in" ID="{D3F15551-F75D-48EA-BDA2-FF3184D7AF44}">
-														<PropertyList>
-															<Property Name="FadeTime" Type="Real64" Value="2"/>
-														</PropertyList>
-													</MusicFade>
+													<MusicFade Name="Destination Fade-in" ID="{D3F15551-F75D-48EA-BDA2-FF3184D7AF44}"/>
 												</DestinationFadeIn>
 											</TransitionInfo>
 										</MusicTransition>
@@ -687,6 +683,24 @@
 											<ObjectList Name="EntryPath">
 												<Reference>
 													<ObjectRef Name="Elder" ID="{DCC6BFF6-63F1-4299-89C0-C276BE8271B8}" WorkUnitID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{F8063BAD-1656-4C1B-BF31-C774106104A4}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Playlist-Kid" ID="{25C8B075-4FF4-4E52-9777-2B3D5080A31A}" WorkUnitID="{05ECC55A-2144-4914-9929-A9BF66EAB9AE}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="LifeStages" ID="{D57483F7-2724-44DC-9FE6-BA4EC2D982A8}" WorkUnitID="{CE20F756-4629-42C4-BE97-BAFF9B7C652B}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>

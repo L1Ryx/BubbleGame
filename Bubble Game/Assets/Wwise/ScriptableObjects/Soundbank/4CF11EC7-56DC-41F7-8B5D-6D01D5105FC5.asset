@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f494a9392764ac892995385caf16df, type: 3}
+  m_Name: 4CF11EC7-56DC-41F7-8B5D-6D01D5105FC5
+  m_EditorClassIdentifier: 
+  objectName: MainBank
+  id: 2880737896
+  guid: 4CF11EC7-56DC-41F7-8B5D-6D01D5105FC5
