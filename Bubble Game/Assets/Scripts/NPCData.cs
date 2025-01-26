@@ -6,9 +6,7 @@ public class NPCData : MonoBehaviour
 {
     [SerializeField] NPCDataCollection nPCData;
 
-    int level = 0;
-
-    public string GetRandomDialogue()
+    public string GetRandomDialogue(int level)
     {
         DialogueCollection dialogueCollection = nPCData.list[level].Dialogues;
 
@@ -22,9 +20,9 @@ public class NPCData : MonoBehaviour
         return dialogueCollection.dialogues[randomIndex];
     }
 
-    public float GetSpawnRate()
+    public float GetSpawnRate(int level)
     {
-        return nPCData.list[level].SpawnRate;
+        return nPCData.list[level].SpawnRate;    
     }
 
 

@@ -23,6 +23,12 @@ public class NPCSpawner : MonoBehaviour
     private Coroutine spawnCoroutine; // Reference to the spawn coroutine
     private bool isSpawning = true;   // To track if the spawner is active
 
+    private LevelManager levelManager;
+
+    private void Awake() {
+        levelManager = FindObjectsByType<LevelManager>(FindObjectsSortMode.None)[0];
+    }
+
     void Start()
     {
         spawnCoroutine = StartCoroutine(Spawn());
@@ -77,21 +83,19 @@ public class NPCSpawner : MonoBehaviour
         float totalWeight = 0f;
         foreach (var spawnable in NPCPrefabs)
         {
-            totalWeight += spawnable.GetComponent<NPCData>().GetSpawnRate();
+            totalWeight += spawnable.GetComponent<NPCData>().GetSpawnRate(levelManager.GetLevel());
         }
 
         // Pick a random value between 0 and totalWeight
         float randomValue = Random.Range(0f, totalWeight);
-        print(totalWeight);
 
         // Select the object based on the random value and spawn rate
         float cumulativeWeight = 0f;
         foreach (var spawnable in NPCPrefabs)
         {
-            cumulativeWeight += spawnable.GetComponent<NPCData>().GetSpawnRate();
+            cumulativeWeight += spawnable.GetComponent<NPCData>().GetSpawnRate(levelManager.GetLevel());
             if (randomValue <= cumulativeWeight)
             {
-                print(spawnable.GetComponent<NPCData>().GetSpawnRate());
                 return spawnable;
             }
         }
