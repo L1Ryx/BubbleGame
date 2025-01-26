@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingRadius: 5
   radiusIncrease: 1
-  radiusDecay: 0.5
+  radiusDecay: 0.25
   lerpDuration: 0.2
   stopPlay:
     m_PersistentCalls:

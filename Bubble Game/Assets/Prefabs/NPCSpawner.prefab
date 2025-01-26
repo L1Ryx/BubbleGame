@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58115227498094d2fb9ee006d9e0cd8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 1.5
+  timeBetweenSpawns: 2
   NPCPrefabs:
   - {fileID: 5807688647191517279, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
   - {fileID: 7977945973495493137, guid: 900c9cafec9e2174cbd9047d826b7964, type: 3}
