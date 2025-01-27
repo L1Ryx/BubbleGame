@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1321793418704475875, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_fontSize
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321793418704475875, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.27
+      objectReference: {fileID: 0}
     - target: {fileID: 2850382988492572466, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
       propertyPath: nPCData
       value: 
@@ -26,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3601095340631772468, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8951335
+      value: 83.80202
       objectReference: {fileID: 0}
     - target: {fileID: 3601095340631772468, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0208278
+      value: 82.032875
       objectReference: {fileID: 0}
     - target: {fileID: 3601095340631772468, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
       propertyPath: m_LocalPosition.z

@@ -83,6 +83,8 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.tag == "light")
         {
             speed = slowSpeed;
+            AkSoundEngine.SetRTPCValue("Brightness", 0);
+
         }
     }
 
@@ -91,6 +93,7 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.tag == "light")
         {
             speed = normalSpeed;
+            AkSoundEngine.SetRTPCValue("Brightness", 100);
         }
     }
 

@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: InterPlayTexts
   m_EditorClassIdentifier: 
   dialogues:
-  - 'Chapter 1: Age of Wonder
+  - 'Chapter I: Age of Wonder
 
     "Endless playmates, no farewells."'
-  - 'Chapter 2: Age of First Flight
+  - 'Chapter II: Age of First Flight
 
-    "The ones who stay become your compass."'
-  - 'Chapter 3: Age of Anchors
+    "Those who stay become your compass."'
+  - 'Chapter III: Age of Anchors
 
     "A mix of embraces and departures."'
-  - 'Chapter 4: Age of Reflection
+  - 'Chapter IV: Age of Reflection
 
     "Learn to say goodbye."'

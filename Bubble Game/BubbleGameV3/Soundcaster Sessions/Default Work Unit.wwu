@@ -62,7 +62,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Adult" ID="{CB52CE01-F86F-4829-8D4B-440DC262C4B6}"/>
+						<CurrentSwitchRef Name="Elder" ID="{DCC6BFF6-63F1-4299-89C0-C276BE8271B8}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
