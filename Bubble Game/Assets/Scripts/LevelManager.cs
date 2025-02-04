@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,8 +14,25 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] DialogueCollection InterPlayTexts;
     [SerializeField] Canvas canvas;
+
+    Dictionary<NPCDataCollection, int> dialogueProgress = new Dictionary<NPCDataCollection, int>();
     private void Start() {
         ShowInterPlayText();
+    }
+
+    public int GetDialogueProgress(NPCDataCollection npcType) {
+        dialogueProgress.TryAdd(npcType,0);
+        return dialogueProgress[npcType];
+    }
+
+    public void IncreaseDialogueProgress(NPCDataCollection npcType)
+    {
+        dialogueProgress[npcType] += 1;
+    }
+
+    public void ResetDialogueProgress()
+    {
+        dialogueProgress.Clear();
     }
 
     public void ShowInterPlayText()
@@ -41,6 +59,7 @@ public class LevelManager : MonoBehaviour
     public void IncreaseLevel()
     {
         level += 1;
+        ResetDialogueProgress();
     }
 
     public int GetLevel()

@@ -6,6 +6,16 @@ public class NPCData : MonoBehaviour
 {
     [SerializeField] NPCDataCollection nPCData;
 
+    public string GetDialogue(int level, int dialogueProgress)
+    {
+        DialogueCollection dialogueCollection = nPCData.list[level].Dialogues;
+        if(dialogueProgress >= dialogueCollection.dialogues.Count)
+        {
+            return GetRandomDialogue(level);
+        }
+        return nPCData.list[level].Dialogues.dialogues[dialogueProgress];
+    }
+
     public string GetRandomDialogue(int level)
     {
         DialogueCollection dialogueCollection = nPCData.list[level].Dialogues;

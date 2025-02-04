@@ -115,7 +115,7 @@ public class NPCTrigger : MonoBehaviour
     private IEnumerator DisplayDialogue()
     {
         dialogueCanvas.enabled = true;
-        string dialogue = GetComponentInParent<NPCData>().GetRandomDialogue(levelManager.GetLevel());
+        string dialogue = GetComponentInParent<NPCData>().GetDialogue(levelManager.GetLevel(), levelManager.GetDialogueProgress(npcDataCollection));
 
         dialogueText.text = string.Empty;
         foreach (char letter in dialogue)
@@ -123,6 +123,7 @@ public class NPCTrigger : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(letterDisplayInterval);
         }
+        levelManager.IncreaseDialogueProgress(npcDataCollection);
     }
 
     public void FadeOutAndDestroy()
