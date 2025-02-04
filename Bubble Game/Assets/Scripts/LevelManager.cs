@@ -7,16 +7,19 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    int level = 0;
+   [SerializeField] int level = 0;
 
     [SerializeField]
     private TextMeshProUGUI dialogueText;
 
     [SerializeField] DialogueCollection InterPlayTexts;
     [SerializeField] Canvas canvas;
+    [Header("Data Cubes")]
+    public LevelData levelData;
 
     Dictionary<NPCDataCollection, int> dialogueProgress = new Dictionary<NPCDataCollection, int>();
     private void Start() {
+        levelData.ResetLevelCount();
         ShowInterPlayText();
     }
 
@@ -58,7 +61,9 @@ public class LevelManager : MonoBehaviour
 
     public void IncreaseLevel()
     {
+        Debug.Log("LEVEL INCREASE FUNCTION CALLED");
         level += 1;
+        levelData.IncrementLevelCount();
         ResetDialogueProgress();
     }
 

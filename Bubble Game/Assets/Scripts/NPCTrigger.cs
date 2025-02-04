@@ -19,6 +19,14 @@ public class NPCTrigger : MonoBehaviour
     [SerializeField]
     private NPCDataCollection npcDataCollection; // Reference to the ScriptableObject
 
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    private AnimatorOverrideController childAnimations; // Child animation override
+    [SerializeField]
+    private AnimatorOverrideController adultAnimations; // Adult animation override
+
     private SpriteRenderer spriteRenderer;
     private Canvas dialogueCanvas;
     private TextMeshProUGUI dialogueText;
@@ -60,6 +68,8 @@ public class NPCTrigger : MonoBehaviour
     private void Start()
     {
         StartCoroutine(FadeIn());
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -92,6 +102,7 @@ public class NPCTrigger : MonoBehaviour
 
         spriteRenderer.color = new Color(color.r, color.g, color.b, 1f);
     }
+
     private void PlayWwiseEvent()
     {
         if (npcDataCollection == null)
@@ -110,7 +121,6 @@ public class NPCTrigger : MonoBehaviour
         AkSoundEngine.PostEvent(npcDataCollection.WwiseEventName, gameObject);
         Debug.Log($"Played Wwise event: {npcDataCollection.WwiseEventName}");
     }
-
 
     private IEnumerator DisplayDialogue()
     {
@@ -146,5 +156,24 @@ public class NPCTrigger : MonoBehaviour
 
         spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0.0f);
         Destroy(gameObject);
+    }
+
+    // Function to switch from child animations to adult animations
+    public void SwitchToAdultAnimations()
+    {
+        if (animator.runtimeAnimatorController == childAnimations)
+        {
+            animator.runtimeAnimatorController = adultAnimations;
+            
+        }
+    }
+
+    public void SetChildAnimations()
+    {
+        if (animator != null && childAnimations != null)
+        {
+            animator.runtimeAnimatorController = childAnimations;
+            
+        }
     }
 }

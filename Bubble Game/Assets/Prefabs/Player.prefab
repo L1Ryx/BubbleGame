@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3005714144777550092}
   - component: {fileID: 449251348983503142}
   - component: {fileID: 3891516666189536388}
+  - component: {fileID: 2462722562518503968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -109,6 +110,8 @@ MonoBehaviour:
   slowSpeed: 1
   fadeDuration: 2
   animator: {fileID: 7801151003189347597}
+  childAnimations: {fileID: 22100000, guid: de0c5b1960d5c4e948cd095658b84ff4, type: 2}
+  adultAnimations: {fileID: 22100000, guid: 0fc402f571ff442dc989cd466e7ae8ff, type: 2}
 --- !u!50 &46205558777339262
 Rigidbody2D:
   serializedVersion: 4
@@ -279,6 +282,34 @@ MonoBehaviour:
       - m_Target: {fileID: 4348539364387939040}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
         m_MethodName: ResetPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2462722562518503968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583523037118367573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b57e58087c894755abadc4a70bd863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 314f2ae2988b43b40855ebac7d8fb732, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4348539364387939040}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: SwitchToAdultAnimations
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

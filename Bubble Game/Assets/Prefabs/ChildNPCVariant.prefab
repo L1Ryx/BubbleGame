@@ -16,6 +16,22 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 0.27
       objectReference: {fileID: 0}
+    - target: {fileID: 2079047613796374702, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4312589838523946912, guid: f044e683ca7a345fab89dda8b0162bbd, type: 3}
+    - target: {fileID: 2079047613796374702, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079047613796374702, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079047613796374702, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2850382988492572466, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
       propertyPath: nPCData
       value: 
@@ -76,6 +92,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChildNPCVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 7245087932529918876, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e97c0b44b37a140e09c57167986ed23c, type: 2}
     - target: {fileID: 8044843455416167719, guid: b2a24e606add649f190f7cbaf19c81be, type: 3}
       propertyPath: npcDataCollection
       value: 

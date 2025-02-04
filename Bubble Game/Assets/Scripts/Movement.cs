@@ -15,6 +15,11 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private AnimatorOverrideController childAnimations; // Child animation override
+    [SerializeField]
+    private AnimatorOverrideController adultAnimations; // Adult animation override
+
     private SpriteRenderer spriteRenderer;
     private float speed;
     private bool isInputDisabled = true; // Flag to disable input
@@ -28,6 +33,13 @@ public class Movement : MonoBehaviour
         if (spriteRenderer == null)
         {
             Debug.LogError("Movement requires a SpriteRenderer to fade out.");
+        }
+
+        // Set child animations as default at start
+        if (animator != null && childAnimations != null)
+        {
+            animator.runtimeAnimatorController = childAnimations;
+            Debug.Log("Set default animations to child.");
         }
     }
 
@@ -84,7 +96,6 @@ public class Movement : MonoBehaviour
         {
             speed = slowSpeed;
             AkSoundEngine.SetRTPCValue("Brightness", 0);
-
         }
     }
 
@@ -113,7 +124,7 @@ public class Movement : MonoBehaviour
 
     public void EnableMovement()
     {
-        // enable input
+        // Enable input
         isInputDisabled = false;
     }
 
@@ -122,7 +133,6 @@ public class Movement : MonoBehaviour
         gameObject.transform.position = Vector3.zero;
         spriteRenderer.color = Color.black;
     }
-
 
     private IEnumerator FadeOutCoroutine()
     {
@@ -139,8 +149,15 @@ public class Movement : MonoBehaviour
 
         // Ensure the player is fully transparent
         spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0.0f);
+    }
 
-        // You can add additional logic here (e.g., disable the GameObject)
-        //gameObject.SetActive(false);
+    // Function to switch from child animations to adult animations
+    public void SwitchToAdultAnimations()
+    {
+        if (animator.runtimeAnimatorController == childAnimations)
+        {
+            animator.runtimeAnimatorController = adultAnimations;
+            Debug.Log("Switched to adult animations.");
+        }
     }
 }

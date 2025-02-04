@@ -318,6 +318,9 @@ MonoBehaviour:
   letterDisplayInterval: 0.05
   fadeInSpeed: 1
   npcDataCollection: {fileID: 11400000, guid: 46ed497387990f4429b801d651a6a52c, type: 2}
+  animator: {fileID: 7245087932529918876}
+  childAnimations: {fileID: 22100000, guid: 0bcfeacf57da64779b799b14300c2b32, type: 2}
+  adultAnimations: {fileID: 22100000, guid: 387ce012f34f44d9aaea6963c6094046, type: 2}
 --- !u!95 &7245087932529918876
 Animator:
   serializedVersion: 7

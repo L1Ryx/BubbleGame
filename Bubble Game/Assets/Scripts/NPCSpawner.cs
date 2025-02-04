@@ -11,7 +11,7 @@ public class NPCSpawner : MonoBehaviour
     private List<GameObject> NPCPrefabs;
 
     [SerializeField]
-    public float spawnRadius = 2f;     // The radius to check for collisions
+    private float spawnRadius = 2f;     // The radius to check for collisions
 
     [SerializeField]
     private float spawnBoundaryX = 10.0f; // Boundary for X axis
@@ -19,13 +19,15 @@ public class NPCSpawner : MonoBehaviour
     [SerializeField]
     private float spawnBoundaryY = 5.0f; // Boundary for Y axis
 
+    [SerializeField]
+    private LevelData levelData; // Reference to LevelData SO
 
     private Coroutine spawnCoroutine; // Reference to the spawn coroutine
     private bool isSpawning = false;   // To track if the spawner is active
-
     private LevelManager levelManager;
 
-    private void Awake() {
+    private void Awake() 
+    {
         levelManager = FindObjectsByType<LevelManager>(FindObjectsSortMode.None)[0];
     }
 
@@ -36,20 +38,16 @@ public class NPCSpawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        while(isSpawning)
+        while (isSpawning)
         {
             SpawnObject(transform.position, 10f);
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
-
     }
 
     public void StopSpawner()
     {
-        // Set the isSpawning flag to false to stop the loop
         isSpawning = false;
-
-        // Stop the coroutine if it's running
         if (spawnCoroutine != null)
         {
             StopCoroutine(spawnCoroutine);
@@ -59,7 +57,6 @@ public class NPCSpawner : MonoBehaviour
 
     public void StartSpawner()
     {
-        // Set the isSpawning flag to false to stop the loop
         isSpawning = true;
         spawnCoroutine = StartCoroutine(Spawn());
     }
@@ -68,36 +65,36 @@ public class NPCSpawner : MonoBehaviour
     {
         Vector3 spawnPosition = GetRandomPosition(spawnCenter, range);
 
-        // Check if the spawn position is occupied by another object using Physics.OverlapSphere
+        // Check if the spawn position is occupied
         Collider[] colliders = Physics.OverlapSphere(spawnPosition, spawnRadius);
-
         if (colliders.Length == 0)
         {
-            // No other objects are occupying the spawn position, so we can spawn
-            Instantiate(ChooseObjectToSpawn(), spawnPosition, Quaternion.identity);
+            GameObject npcToSpawn = ChooseObjectToSpawn();
+
+            if (npcToSpawn != null)
+            {
+                GameObject newNPC = Instantiate(npcToSpawn, spawnPosition, Quaternion.identity);
+                AssignCorrectAnimations(newNPC); // Assign child or adult animations
+            }
         }
         else
         {
-            // The spawn position is occupied, try again or handle accordingly
             Debug.Log("Spawn position is occupied, trying again...");
-            SpawnObject(spawnCenter, range); // You can call this recursively or use a loop
+            SpawnObject(spawnCenter, range);
         }
     }
 
     private GameObject ChooseObjectToSpawn()
     {
-        // Calculate the total sum of all spawn rates
         float totalWeight = 0f;
         foreach (var spawnable in NPCPrefabs)
         {
             totalWeight += spawnable.GetComponent<NPCData>().GetSpawnRate(levelManager.GetLevel());
         }
 
-        // Pick a random value between 0 and totalWeight
         float randomValue = Random.Range(0f, totalWeight);
-
-        // Select the object based on the random value and spawn rate
         float cumulativeWeight = 0f;
+
         foreach (var spawnable in NPCPrefabs)
         {
             cumulativeWeight += spawnable.GetComponent<NPCData>().GetSpawnRate(levelManager.GetLevel());
@@ -107,17 +104,40 @@ public class NPCSpawner : MonoBehaviour
             }
         }
 
-        return null; // This should never happen if spawnableObjects is not empty
+        return null;
     }
 
     public Vector3 GetRandomPosition(Vector3 center, float range)
     {
-        // Generate a random position within a range
-        Vector3 randomPosition = center + new Vector3(
+        return center + new Vector3(
             Random.Range(-spawnBoundaryX, spawnBoundaryX),
             Random.Range(-spawnBoundaryY, spawnBoundaryY),
             0
         );
-        return randomPosition;
+    }
+
+    private void AssignCorrectAnimations(GameObject spawnedNPC)
+    {
+        if (spawnedNPC == null) return;
+
+        // Check if this is the first NPC prefab in the list (default NPC type)
+        if (NPCPrefabs.Count > 0 && spawnedNPC.name.Contains(NPCPrefabs[0].name))
+        {
+            int level = levelData.GetLevelCount(); // Get the current level from LevelData
+            NPCTrigger npcTrigger = spawnedNPC.GetComponent<NPCTrigger>();
+
+            if (npcTrigger != null)
+            {
+                if (level <= 0)
+                {
+                    npcTrigger.SetChildAnimations();
+
+                }
+                else
+                {
+                    npcTrigger.SwitchToAdultAnimations();
+                }
+            }
+        }
     }
 }
